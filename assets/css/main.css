@@ -284,6 +284,7 @@ p{
         justify-content: center;
         left: 50%;
         bottom: -5%;
+        min-width: 300px;
     }
     .social{
         right: 0;
