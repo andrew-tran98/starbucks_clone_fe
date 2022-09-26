@@ -27,9 +27,12 @@ header{
     align-items: center;
 }
 
+.toggle{
+    display: none;
+}
 .starbucks-logo{
     position: relative;
-    left: 80px;
+    left: 60px;
     top: 0;
 }
 
@@ -46,11 +49,13 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
+.menu-link.active{
+    color: rgb(3,113,70);
+}
 .menu-link{
     text-decoration: none;
     display: inline-block;
-    color: rgb(3,113,70);
+    color: #888;
     margin-left: 45px;
     font-weight:bold;
     letter-spacing: 1px;
@@ -192,5 +197,97 @@ p{
     }
     header ul{
         display: none;
+    }
+}
+
+/*RWD*/
+@media (max-width: 991px){
+    header{
+        padding: 20px;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+        padding-right: 20px;
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    .toggle #list{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-top: 20px;
+        right: 0;
+        min-width: 100px;
+    }   
+    .toggle #list li{
+        list-style: none;
+        margin-right: 5px;
+        text-align: right;
+    }
+    .toggle #list li a{
+        text-decoration: none;
+        color: #888;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .toggle #list li a:hover{
+        color: rgb(3,113,70)
+    }
+    .toggle i{
+        position: absolute;
+        z-index: 2;
+    }
+    .starbucks-logo{
+        max-width: 60px;
+        left: 0;
+        float: left;
+    }
+    .menu{
+        display: none;
+    }
+    section{
+        padding: 20px 20px 30px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+        padding: 0;
+    }
+    .content .description{
+        max-width: 100%;
+    }
+    .content .description h2{
+        font-size: 15px;
+    }
+    .circle{
+        margin-top: 150px;
+        clip-path: circle(400px at center bottom);
+    }
+    .btn{
+        /*font-weight: 500;*/
+        font-size: 13px;
+        max-width: 140px;
+        padding: 4px 10px;
+    }
+    .img{
+        justify-content: center;
+        margin-right: 0;
+        max-width: 160px;
+    }
+    .main-img{
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+    .thumb{
+        position: absolute;
+        justify-content: center;
+        left: 50%;
+        bottom: -5%;
+        max-width: 230px;
+    }
+    .social{
+        right: 0;
+        top: 40%;
     }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./assets/js/main.js"></script>
     <title>StarBucks</title>
 </head>
@@ -15,8 +16,17 @@
         </div>
         <header>
             <a href="index.html"><img src="./assets/thumbs/logo.png" class="starbucks-logo" alt="StarBucks Logo"></a>
+            <div class="toggle">
+                <i class="fa fa-bars" onclick="myFunction()"></i>
+                <ul id = "list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="#">HOME</a></li>
+                <li class="menu-item"><a class="menu-link active" href="#">HOME</a></li>
                 <li class="menu-item"><a class="menu-link" href="#">MENU</a></li>
                 <li class="menu-item"><a class="menu-link" href="#">WHAT'S NEWS</a></li>
                 <li class="menu-item"><a class="menu-link" href="#">CONTACT</a></li>
@@ -37,7 +47,6 @@
             <ul class="thumb">
                 <li class="li-thumb"><img onclick="changeImg('./assets/img/img1.png'); changeCircleColor('#037146')" class="thumb-item" src="./assets/thumbs/thumb1.png" alt=""></li>
                 <li class="li-thumb"><img onclick="changeImg('./assets/img/img2.png'); changeCircleColor('#ea7491')" class="thumb-item" src="./assets/thumbs/thumb2.png" alt=""></li>
-                <!-- <li class="li-thumb"><img onclick="changeImg('./assets/img/img5.png'); changeCircleColor('#c45f72')" class="thumb-item" src="./assets/thumbs/thumb5.png" alt=""></li> -->
                 <li class="li-thumb"><img onclick="changeImg('./assets/img/img4.png'); changeCircleColor('#c83b32')" class="thumb-item" src="./assets/thumbs/thumb4.png" alt=""></li>
             </ul>
             <ul class="social">
